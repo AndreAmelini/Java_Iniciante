@@ -1,4 +1,4 @@
-# Java_Iniciante
+# CalculoPi
 import java.util.Scanner;
 
 public class CalculoPi{
