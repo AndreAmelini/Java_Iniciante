@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Quadrado{
+    public static void main(String[] args) {
+        // Criar um objeto Scanner para entrada de dados
+        Scanner scn = new Scanner(System.in);
+
+        // Declaração das variáveis
+        int num1, num2, resultado;
+
+        System.out.println("Calcule o quadrado desse número");
+        
+        // Solicitar ao utilizador que insira o primeiro número
+        System.out.println("Digite o primeiro número:");
+        num1 = scn.nextInt();
+
+        // Solicitar ao utilizador que insira o segundo número
+        System.out.println("Digite o segundo número:");
+        num2 = scn.nextInt();
+
+        // Calcular o quadrado dos dois números e somá-los
+        resultado = (num1 * num1) + (num2 * num2);
+
+        // Exibir o resultado
+        System.out.println("O resultado da soma dos quadrados dos números é: " + resultado);
+
+        // Fechar o scanner para evitar vazamento de recursos
+        scn.close();
+    }
+}
