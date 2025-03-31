@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class AC1 {
+    public static void main(String[] args){
+    Scanner scanner = new Scanner(System.in); 
+    double NotaMinima = 5;
+
+    System.out.println("Digite a nota da ac1:");
+    double ac1 = scanner.nextDouble();
+
+    System.out.println("Digite a ac2");
+    double ac2 = scanner.nextDouble();
+
+    System.out.println("Digite a af");
+    double af = scanner.nextDouble();
+
+    System.out.println("Verifique se as notas esta corretas");
+    System.out.println("ac1"+ ac1);
+    System.out.println("ac2" + ac2);
+    System.out.println("af" + af);
+
+    double media = (ac1 * 0.15) +(ac2 * 0.30) + (af * 0.45);
+
+    System.out.println("Media Final" + media);
+     if(media >= NotaMinima){
+    System.out.println("Aprovado");
+
+     }else{
+    System.out.println("Reprovado");
+    scanner.close();
+     }
